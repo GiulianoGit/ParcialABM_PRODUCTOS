@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<ABM_PRODUCTO.Models.Producto>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Stock de Productos";
 }
 
 
@@ -40,7 +40,7 @@
                 @Html.DisplayFor(modelItem => item.Precio)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.FechaVencimiento)
+                    @Html.DisplayFor(modelItem => item.FechaVencimiento)
             </td>
             <td>
                     <a asp-action="Edit" class="btn btn-outline-success" asp-route-id="@item.IdProducto">Editar</a> |

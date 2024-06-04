@@ -1,42 +1,40 @@
 ﻿@model ABM_PRODUCTO.Models.Producto
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles";
 }
-
-
 
 <div>
     <h4>Detalles del Producto</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Nombre)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Nombre)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Tipo)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Tipo)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Precio)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Precio)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.FechaVencimiento)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.FechaVencimiento)
         </dd>
     </dl>
 </div>
 <div>
-    <input type="submit" value="Editar" class="btn btn-outline-success" />
-    <a asp-action="Index" class="btn btn-outline-danger"> Volver a la lista</a>
+    <a asp-action="Edit" class="btn btn-outline-success" asp-route-id="@Model.IdProducto">Editar</a>
+    <a asp-action="Index" class="btn btn-outline-danger">Volver a la lista</a>
 </div>
