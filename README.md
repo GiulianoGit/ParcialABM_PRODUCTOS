@@ -1,1 +1,1 @@
-Utilize MVC ASP.NetCore version .NET 8.0
+Para hacer la conexión: ir al archivo "appsettings.json" despues colocar el siguiente comando "server=localhost; database=ABM_PRODUCTOS; integrated security=true; TrustServerCertificate=Yes;"  y Utilice Net. 8.0
